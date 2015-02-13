@@ -1,4 +1,4 @@
-docker-ubuntu-vnc-desktop
+docker-ubuntu-nxserver-xfce
 =========================
 
 ### From Docker Index
