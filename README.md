@@ -3,18 +3,18 @@ docker-ubuntu-nxserver-xfce
 
 ### From Docker Index
 ```
-docker pull ensky/docker-ubuntu-nxserver-xfce
+docker pull ensky/ubuntu-nxserver-xfce
 ```
 
 ### Build yourself
 ```
 git clone https://github.com/ensky/docker-ubuntu-nxserver-xfce.git
-docker build --rm -t ensky/docker-ubuntu-nxserver-xfce docker-ubuntu-nxserver-xfce
+docker build --rm -t ensky/ubuntu-nxserver-xfce docker-ubuntu-nxserver-xfce
 ```
 
 ### Run
 ```
-docker run -d -p 222:22 -v /etc:/mnt:ro -v /home:/home:rw ensky/docker-ubuntu-nxserver-xfce
+docker run -d -p 222:22 -v /etc:/mnt:ro -v /home:/home:rw ensky/ubuntu-nxserver-xfce
 ```
 
 ### SSH
@@ -28,5 +28,5 @@ use NX Client to connect to your server.
 choose UNIX -> CDE as your desktop setting in NX Client.
 
 ### reference
-+ [Registry Repository site](https://registry.hub.docker.com/u/ensky/docker-ubuntu-nxserver-xfce/)
++ [Registry Repository site](https://registry.hub.docker.com/u/ensky/ubuntu-nxserver-xfce/)
 + [FreeNX](https://help.ubuntu.com/community/FreeNX)
