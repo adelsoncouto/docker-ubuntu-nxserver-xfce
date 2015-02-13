@@ -1,28 +1,31 @@
 docker-ubuntu-vnc-desktop
 =========================
 
-From Docker Index
+### From Docker Index
 ```
-docker pull dorowu/ubuntu-desktop-lxde-vnc
-```
-
-Build yourself
-```
-git clone https://github.com/fcwu/docker-ubuntu-vnc-desktop.git
-docker build --rm -t dorowu/ubuntu-desktop-lxde-vnc docker-ubuntu-vnc-desktop
+docker pull ensky/docker-ubuntu-nxserver-xfce
 ```
 
-Run
+### Build yourself
 ```
-docker run -i -t -p 6080:6080 dorowu/ubuntu-desktop-lxde-vnc
+git clone https://github.com/ensky/docker-ubuntu-nxserver-xfce.git
+docker build --rm -t ensky/docker-ubuntu-nxserver-xfce docker-ubuntu-nxserver-xfce
 ```
 
-Browse http://127.0.0.1:6080/vnc.html
+### Run
+```
+docker run -d -p 222:22 -v /etc:/mnt:ro -v /home:/home:rw ensky/docker-ubuntu-nxserver-xfce
+```
 
-<img src="https://raw.github.com/fcwu/docker-ubuntu-vnc-desktop/master/screenshots/lxde.png" width=400/>
+### SSH
+```
+ssh your_system_account@localhost -p 222
+```
 
+### ([http://nx-client-for-windows.software.informer.com/3.5/](NX client))
+use NX Client to connect to your server.
 
-Trobleshooting
-==================
+choose UNIX -> CDE as your desktop setting in NX Client.
 
-1. boot2docker connection issue, https://github.com/fcwu/docker-ubuntu-vnc-desktop/issues/2
+### reference
++ [https://help.ubuntu.com/community/FreeNX](FreeNX)
