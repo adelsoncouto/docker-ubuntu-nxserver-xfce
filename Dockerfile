@@ -27,8 +27,10 @@ RUN apt-key adv --recv-keys --keyserver keyserver.ubuntu.com B9316A7BC7917B12 \
        openssh-server pwgen sudo vim-tiny \
        net-tools \  
        gtk2-engines-murrine ttf-ubuntu-font-family \
+       ibus ibus-clutter ibus-gtk ibus-gtk3 ibus-qt4 ibus-chewing \
     && apt-get install -y --force-yes xfce4 xfce4-goodies freenx-server \
         libreoffice libreoffice-gnome firefox \
+        ttf-wqy-zenhei language-pack-zh-hant language-pack-zh-hant-base libreoffice-l10n-zh-tw \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
