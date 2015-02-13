@@ -22,10 +22,11 @@ docker run -d -p 222:22 -v /etc:/mnt:ro -v /home:/home:rw ensky/docker-ubuntu-nx
 ssh your_system_account@localhost -p 222
 ```
 
-### ([http://nx-client-for-windows.software.informer.com/3.5/](NX client))
+### ([NX client](http://nx-client-for-windows.software.informer.com/3.5/))
 use NX Client to connect to your server.
 
 choose UNIX -> CDE as your desktop setting in NX Client.
 
 ### reference
-+ [https://help.ubuntu.com/community/FreeNX](FreeNX)
++ [Registry Repository site](https://registry.hub.docker.com/u/ensky/docker-ubuntu-nxserver-xfce/)
++ [FreeNX](https://help.ubuntu.com/community/FreeNX)
